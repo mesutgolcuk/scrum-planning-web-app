@@ -1,0 +1,27 @@
+<div class="container">
+    <h1 transloco="title"></h1>
+    <form [formGroup]="form" id="stories-form" (ngSubmit)="onSubmit(form.value)">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 group">
+                <label for="sessionName" transloco="session-name.label"></label>
+                <input pInputText type="text" formControlName="sessionName" id="sessionName" maxlength="200" />
+            </div>
+            <div class="col-xs-12 col-sm-6 group">
+                <label for="voterNum" transloco="number-of-voters.label"></label>
+                <input type="text" pInputText formControlName="voterNum" id="voterNum" pInputText
+                    [pKeyFilter]="voterRegex" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 textarea-group">
+                <label for="stories" transloco="text-area.label"></label><br>
+                <textarea [rows]="5" [cols]="30" pInputTextarea id="stories" formControlName="stories"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 offset-sm-8">
+                <button pButton type="submit" form="stories-form" [label]="'text-area.button' | transloco"></button>
+            </div>
+        </div>
+    </form>
+</div>
