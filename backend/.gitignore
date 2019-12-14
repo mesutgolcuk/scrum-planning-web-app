@@ -13,3 +13,8 @@ node_modules
 package-lock.json
 *.log
 *.gz
+
+
+.vscode
+
+*.lnk
