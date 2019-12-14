@@ -7,27 +7,32 @@ import { TranslocoModule, translocoConfig, TRANSLOCO_CONFIG } from '@ngneat/tran
 
 import {KeyFilterModule} from 'primeng/keyfilter';
 import {ButtonModule} from 'primeng/button';
+import {TableModule} from 'primeng/table';
 
 import { AppComponent } from './app.component';
 import { StoryListComponent } from './story-list/story-list.component';
 import { environment } from '../environments/environment';
 import { translocoLoader } from './transloco-loader';
-;
+import { AppRoutingModule } from './app-routing.module';
+import { ScrumMasterPanelComponent } from './scrum-master-panel/scrum-master-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StoryListComponent
+    StoryListComponent,
+    ScrumMasterPanelComponent,
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     ButtonModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     KeyFilterModule,
     TranslocoModule, 
-    HttpClientModule
+    HttpClientModule,
+    TableModule
   ],
   providers: [{
       provide: TRANSLOCO_CONFIG,

@@ -1,7 +1,15 @@
 {
-    "title": "SCRUM POKER",
-    "session-name.label": "Session Name",
     "number-of-voters.label": "Number of voters",
+    "scrum-master.button": "Enter story point",
+    "scrum-master.table.message": "Click to enter story point",
+    "session-name.label": "Session Name",
+    "story.activeStory": "Active Story: {{value}}",
+    "table.story": "Stories",
+    "table.story-point": "Story Point",
+    "table.status": "Status", 
+    "table.status.active": "Active",
+    "table.status.passive": "Passive",
     "text-area.label": "Paste your story list:",
-    "text-area.button": "Start Session"
+    "text-area.button": "Start Session",
+    "title": "SCRUM POKER"
 }
